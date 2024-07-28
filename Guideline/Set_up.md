@@ -1,22 +1,22 @@
-`In this section, we will start by setting up our project environment. We'll create a folder for our project, set up a virtual environment, and connect our project to GitHub. This setup will ensure our code is organized, dependencies are managed, and version control is in place.`
+In this section, we will start by setting up our project environment. We'll create a folder for our project, set up a virtual environment, and connect our project to GitHub. This setup will ensure our code is organized, dependencies are managed, and version control is in place.
 
-#### **`Step 1: Create a Project Folder`**
+#### **Step 1: Create a Project Folder**
 
-* **`Create a Project Folder`**`: First, create a folder for your project. Open your terminal and run the following command:`
+* **Create a Project Folder**: First, create a folder for your project. Open your terminal and run the following command:
 
 		`bash`  
 		`mkdir customer-churn-prediction`  
-`cd customer-churn-prediction`
+        `cd customer-churn-prediction`
 
-`![][image1]`
+![][image1]
 
-* **`Initialize a Git Repository`**`: Initialize a Git repository in your project folder:`  
-  *`bash`*  
-  `git init`
+* **Initialize a Git Repository**: Initialize a Git repository in your project folder:
+    *`bash`*  
+    `git init`
 
-`![][image2]`
+![][image2]
 
-**`Step 2: Set Up a Virtual Environment`**
+**Step 2: Set Up a Virtual Environment**
 
 * **`Create a Virtual Environment`**`: Create a virtual environment using venv. This ensures that all dependencies are isolated from your global Python environment.`  
   *`bash`*  
