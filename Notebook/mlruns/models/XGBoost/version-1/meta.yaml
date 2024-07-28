@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1722180727629
+current_stage: None
+description: ''
+last_updated_timestamp: 1722180727629
+name: XGBoost
+run_id: ed0c4f106250488b95e664a9e8ea3bfd
+run_link: ''
+source: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/ed0c4f106250488b95e664a9e8ea3bfd/artifacts/XGBoost
+status: READY
+status_message: null
+storage_location: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/ed0c4f106250488b95e664a9e8ea3bfd/artifacts/XGBoost
+user_id: null
+version: 1

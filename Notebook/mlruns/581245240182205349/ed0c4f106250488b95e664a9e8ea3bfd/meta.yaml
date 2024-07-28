@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/ed0c4f106250488b95e664a9e8ea3bfd/artifacts
+end_time: 1722164872138
+entry_point_name: ''
+experiment_id: '581245240182205349'
+lifecycle_stage: active
+run_id: ed0c4f106250488b95e664a9e8ea3bfd
+run_name: XGBoost
+run_uuid: ed0c4f106250488b95e664a9e8ea3bfd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722164867923
+status: 3
+tags: []
+user_id: SHUCHISMITA MALLICK

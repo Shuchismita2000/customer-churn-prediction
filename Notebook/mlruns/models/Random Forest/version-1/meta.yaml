@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1722164359636
+current_stage: None
+description: ''
+last_updated_timestamp: 1722164359636
+name: Random Forest
+run_id: f0904e6204634fa4a98f2d99847b187c
+run_link: ''
+source: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/f0904e6204634fa4a98f2d99847b187c/artifacts/Best
+  Random Forest
+status: READY
+status_message: null
+storage_location: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/f0904e6204634fa4a98f2d99847b187c/artifacts/Best
+  Random Forest
+user_id: null
+version: 1
