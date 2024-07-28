@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Portfolio%20Github/customer-churn-prediction/mlruns/236818680545459995/bc03bf66b57a4b99b9b8cd9654bb885f/artifacts
+end_time: 1722068458648
+entry_point_name: ''
+experiment_id: '236818680545459995'
+lifecycle_stage: active
+run_id: bc03bf66b57a4b99b9b8cd9654bb885f
+run_name: best_modesl_grid_search
+run_uuid: bc03bf66b57a4b99b9b8cd9654bb885f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722068454468
+status: 3
+tags: []
+user_id: SHUCHISMITA MALLICK
