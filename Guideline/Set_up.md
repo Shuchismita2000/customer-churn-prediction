@@ -3,12 +3,11 @@ In this section, we will start by setting up our project environment. We'll crea
 #### **Step 1: Create a Project Folder**
 
 * **Create a Project Folder**: First, create a folder for your project. Open your terminal and run the following command:
-        bash
-        
-    ```        
-		mkdir customer-churn-prediction
-    cd customer-churn-prediction
-    ````
+
+  ```bash
+	mkdir customer-churn-prediction
+  cd customer-churn-prediction
+  ````
         
 ![][image1]
 
