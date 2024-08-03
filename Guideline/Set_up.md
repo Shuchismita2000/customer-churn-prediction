@@ -7,43 +7,52 @@ In this section, we will start by setting up our project environment. We'll crea
   * Create the folder 
 ```bash
   mkdir customer-churn-prediction
-````
+```
+
   * Select the folder 
+
 ```bash
   cd customer-churn-prediction
-````
+```
         
-![][image1]
+![][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img1.png]
 
 * **Initialize a Git Repository**: Initialize a Git repository in your project folder:
-    *`bash`*  
-    `git init`
 
-![][image2]
+```bash 
+  git init
+```
+
+![][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img2.png]
 
 **Step 2: Set Up a Virtual Environment**
 
-* **`Create a Virtual Environment`**`: Create a virtual environment using venv. This ensures that all dependencies are isolated from your global Python environment.`  
-  *`bash`*  
-  `python -m venv venv`
+* **Create a Virtual Environment**: Create a virtual environment using venv. This ensures that all dependencies are isolated from your global Python environment.
+
+```bash 
+  python -m venv venv
+```  
 
 
-`![][image3]`
+![][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img3.png]
 
-* **`Activate the Virtual Environment`**`: Activate the virtual environment:`  
-  1. `On Windows:`  
-     *`bash`*  
-     `.\venv\Scripts\activate`
+* **Activate the Virtual Environment**: Activate the virtual environment:
+  1. On Windows:  
+```bash 
+     .\venv\Scripts\activate
+```
 
-  `![][image4]`
+  ![][ihttps://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img4.png]
 
-     1. `On macOS and Linux:`  
-        *`bash`*  
-        `source venv/bin/activate`  
-          
-  * **`Install Required Packages`**`: Install the necessary packages using pip. Start with pandas, numpy, matplotlib, seaborn, and scikit-learn. You can add more packages as needed later.`  
-    *`bash`*  
-    `pip install pandas numpy matplotlib seaborn scikit-learn`
+  2. On macOS and Linux:  
+```bash  
+  source venv/bin/activate
+```      
+
+  * **Install Required Packages**: Install the necessary packages using pip. Start with pandas, numpy, matplotlib, seaborn, and scikit-learn. You can add more packages as needed later.
+```bash  
+  pip install pandas numpy matplotlib seaborn scikit-learn
+```
 
 `![][image5]`
 
