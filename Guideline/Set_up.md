@@ -4,8 +4,12 @@ In this section, we will start by setting up our project environment. We'll crea
 
 * **Create a Project Folder**: First, create a folder for your project. Open your terminal and run the following command:
 
+  * Create the folder 
 ```bash
   mkdir customer-churn-prediction
+````
+  * Select the folder 
+```bash
   cd customer-churn-prediction
 ````
         
