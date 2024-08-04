@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1722758121003
+current_stage: None
+description: ''
+last_updated_timestamp: 1722758121003
+name: final_model
+run_id: 2163e5788ec04dc5bf717ef9ef496dd0
+run_link: ''
+source: file:///d:/Portfolio%20Github/customer-churn-prediction/mlruns/236818680545459995/2163e5788ec04dc5bf717ef9ef496dd0/artifacts/XGBoost
+status: READY
+status_message: null
+storage_location: file:///d:/Portfolio%20Github/customer-churn-prediction/mlruns/236818680545459995/2163e5788ec04dc5bf717ef9ef496dd0/artifacts/XGBoost
+user_id: null
+version: 1

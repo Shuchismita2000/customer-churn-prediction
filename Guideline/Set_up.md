@@ -5,17 +5,18 @@ In this section, we will start by setting up our project environment. We'll crea
 * **Create a Project Folder**: First, create a folder for your project. Open your terminal and run the following command:
 
   * Create the folder 
+
 ```bash
   mkdir customer-churn-prediction
 ```
 
-  * Select the folder 
+    * Select the folder 
 
 ```bash
   cd customer-churn-prediction
 ```
         
-![][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img1.png]
+![ ][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img1.png]
 
 * **Initialize a Git Repository**: Initialize a Git repository in your project folder:
 
@@ -23,7 +24,7 @@ In this section, we will start by setting up our project environment. We'll crea
   git init
 ```
 
-![][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img2.png]
+![ ][https://github.com/Shuchismita2000/customer-churn-prediction/blob/master/Guideline/images/img2.png]
 
 **Step 2: Set Up a Virtual Environment**
 
