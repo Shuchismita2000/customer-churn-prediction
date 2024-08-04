@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/bbda07cf96d84c8481dcc6e9b4cb0125/artifacts
+end_time: 1722768565763
+entry_point_name: ''
+experiment_id: '581245240182205349'
+lifecycle_stage: active
+run_id: bbda07cf96d84c8481dcc6e9b4cb0125
+run_name: Random forest
+run_uuid: bbda07cf96d84c8481dcc6e9b4cb0125
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722768553665
+status: 3
+tags: []
+user_id: SHUCHISMITA MALLICK

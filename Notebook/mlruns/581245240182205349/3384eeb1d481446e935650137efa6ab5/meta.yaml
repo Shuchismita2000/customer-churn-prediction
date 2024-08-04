@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/Portfolio%20Github/customer-churn-prediction/Notebook/mlruns/581245240182205349/3384eeb1d481446e935650137efa6ab5/artifacts
+end_time: 1722764372310
+entry_point_name: ''
+experiment_id: '581245240182205349'
+lifecycle_stage: active
+run_id: 3384eeb1d481446e935650137efa6ab5
+run_name: Logistic Regression
+run_uuid: 3384eeb1d481446e935650137efa6ab5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722764355217
+status: 3
+tags: []
+user_id: SHUCHISMITA MALLICK
