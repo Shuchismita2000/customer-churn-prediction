@@ -1,9 +1,7 @@
 import streamlit as st
-from home import show_home_page
 from predict_page import show_predict_page
-from explore_page import show_explore_page
-from explore import explore_page
-
+from guideline import show_guideline_page
+from about import about
 
 # Function for the About page
 def show_about_page():
@@ -13,14 +11,12 @@ def show_about_page():
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.selectbox("Telco Company", ["Home", "Predict", "Explore", "About"])
+page = st.sidebar.selectbox("Telco Company", ["Home" , "Guideline", 'About Me'])
 
 # Display the selected page
 if page == "Home":
-    show_home_page()
-elif page == "Predict":
     show_predict_page()
-elif page == "Explore":
-    explore_page()
+elif page == "Guideline":
+    show_guideline_page()
 elif page == "About":
-    show_about_page()
+    about()

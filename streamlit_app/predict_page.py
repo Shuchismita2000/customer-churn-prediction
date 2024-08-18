@@ -2,7 +2,7 @@ import streamlit as st
 from joblib import load
 import numpy as np
 import pandas as pd
-
+from explore import explore_page
 
 # Load the model
 #@st.cache_data(allow_output_mutation=True)
@@ -96,23 +96,37 @@ def generate_insights(churn_status):
 
 def show_predict_page():
     # Title and description
-    st.title('Customer Churn Prediction App')
+    st.title('Telco Customer Churn Prediction App')
+    st.markdown("""           
+        **Telco Company** build this app, which uses a pre-trained model to make predictions.
+              
+        This app empowers you to leverage the power of machine learning to predict customer churn. By analyzing customer data, you can identify potential churners and take proactive measures to retain them.
+
+        Key features:
+
+        * **Data Exploration:** Gain insights into customer behavior patterns from past data.
+        * **Model Prediction:** Leverage a trained model to predict churn probability.
+        """)
+
+    st.markdown("""  
+                -------------------------------------------------         
+        ### **Try yourself by a small example** 
+
+        * **Single Customer:** If you have singl;e customer to predict put the values, we have settings of default values to try it out, click predict button, or you can put your values following the sample defaul values.
+        * **Multiple Customer:** Leverage upload csv file option to predcit for the multiple customer, we are providing one sample csv file, you can download and upload it to check how it's working. 
+        """)
+    st.markdown("""  
+                -------------------------------------------------         
+        ### **FAQs** 
+           
+        f you want to know about the trends and patterns of the customers from the past data, scroll down to check the FAQs Section.
+                
+        """)
+
+    st.markdown("""  
+                -------------------------------------------------  """)
     
-    st.markdown(
-    """
-    <div style='text-align: justify;'>
-    <h1>🎯 <b>Introduction</b></h1>
-
-    In today's competitive market, retaining customers is crucial for the success of subscription-based businesses. Customer churn, which refers to the rate at which customers stop subscribing to a service, can significantly impact a company's revenue and growth. Therefore, predicting and understanding the factors that lead to customer churn can help businesses implement effective retention strategies.
-
-    Our goal is to build a predictive model that can identify customers who are likely to churn, allowing the company to take proactive measures to retain them.
-    </div>
-    """,
-    unsafe_allow_html=True
-    )
-    st.write('Telco Company build this app, which uses a pre-trained model to make predictions.')
-
-
+    st.write("## Prediction")
     # Option to predict for a single customer or upload a CSV file
     prediction_option = st.selectbox("Choose Prediction Type", ["Single Customer", "Upload CSV"])
 
@@ -121,30 +135,30 @@ def show_predict_page():
         st.write('Enter the input features:')
 
         # Input fields for the features based on the real dataset
-        customer_id = st.text_input('CustomerID')
+        customer_id = st.text_input('CustomerID', value='7590-VHVEG')
         count = st.number_input('Count', min_value=0, value=0)
-        zip_code = st.number_input('Zip Code', min_value=90001, max_value=96161, value=90001)
-        city = st.text_input('City')
-        gender = st.selectbox('Gender', ['Male', 'Female'])
-        senior_citizen = st.selectbox('Senior Citizen', ['Yes', 'No'])
-        partner = st.selectbox('Partner', ['Yes', 'No'])
-        dependents = st.selectbox('Dependents', ['Yes', 'No'])
-        tenure_months = st.number_input('Tenure Months', min_value=0, max_value=100, value=0)
-        phone_service = st.selectbox('Phone Service', ['Yes', 'No'])
-        multiple_lines = st.selectbox('Multiple Lines', ['Yes', 'No', 'No phone service'])
-        internet_service = st.selectbox('Internet Service', ['DSL', 'Fiber optic', 'No'])
-        online_security = st.selectbox('Online Security', ['Yes', 'No', 'No internet service'])
-        online_backup = st.selectbox('Online Backup', ['Yes', 'No', 'No internet service'])
-        device_protection = st.selectbox('Device Protection', ['Yes', 'No', 'No internet service'])
-        tech_support = st.selectbox('Tech Support', ['Yes', 'No', 'No internet service'])
-        streaming_tv = st.selectbox('Streaming TV', ['Yes', 'No', 'No internet service'])
-        streaming_movies = st.selectbox('Streaming Movies', ['Yes', 'No', 'No internet service'])
-        contract = st.selectbox('Contract', ['Month-to-month', 'One year', 'Two year'])
-        paperless_billing = st.selectbox('Paperless Billing', ['Yes', 'No'])
-        payment_method = st.selectbox('Payment Method', ['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'])
-        monthly_charges = st.number_input('Monthly Charges', min_value=0.0, value=0.0)
-        total_charges = st.number_input('Total Charges', min_value=0.0, value=0.0)
-        cltv = st.number_input('Customer Lifetime Value (CLTV)', min_value=0.0, value=0.0)
+        zip_code = st.number_input('Zip Code', min_value=90001, max_value=96161, value=94109)
+        city = st.text_input('City', value='San Francisco')
+        gender = st.selectbox('Gender', ['Male', 'Female'], index=1)
+        senior_citizen = st.selectbox('Senior Citizen', ['Yes', 'No'], index=1)
+        partner = st.selectbox('Partner', ['Yes', 'No'], index=0)
+        dependents = st.selectbox('Dependents', ['Yes', 'No'], index=1)
+        tenure_months = st.number_input('Tenure Months', min_value=0, max_value=100, value=1)
+        phone_service = st.selectbox('Phone Service', ['Yes', 'No'], index=1)
+        multiple_lines = st.selectbox('Multiple Lines', ['Yes', 'No', 'No phone service'], index=2)
+        internet_service = st.selectbox('Internet Service', ['DSL', 'Fiber optic', 'No'], index=1)
+        online_security = st.selectbox('Online Security', ['Yes', 'No', 'No internet service'], index=1)
+        online_backup = st.selectbox('Online Backup', ['Yes', 'No', 'No internet service'], index=0)
+        device_protection = st.selectbox('Device Protection', ['Yes', 'No', 'No internet service'], index=1)
+        tech_support = st.selectbox('Tech Support', ['Yes', 'No', 'No internet service'], index=1)
+        streaming_tv = st.selectbox('Streaming TV', ['Yes', 'No', 'No internet service'], index=0)
+        streaming_movies = st.selectbox('Streaming Movies', ['Yes', 'No', 'No internet service'], index=1)
+        contract = st.selectbox('Contract', ['Month-to-month', 'One year', 'Two year'],index=0)
+        paperless_billing = st.selectbox('Paperless Billing', ['Yes', 'No'], index=0)
+        payment_method = st.selectbox('Payment Method', ['Electronic check', 'Mailed check', 'Bank transfer (automatic)', 'Credit card (automatic)'], index=0)
+        monthly_charges = st.number_input('Monthly Charges', min_value=0.0, value=29.85)
+        total_charges = st.number_input('Total Charges', min_value=0.0, value=29.85)
+        cltv = st.number_input('Customer Lifetime Value (CLTV)', min_value=0.0, value=1000.0)
 
         # Create a dataframe from user inputs
         input_data = pd.DataFrame({
@@ -244,7 +258,11 @@ def show_predict_page():
 
     
         """)
-
+        
+        #Download the sample file 
+        sample_file = r"D:\Portfolio Github\customer-churn-prediction\sample_customer_churn.csv"
+        
+        st.download_button(label="Download Sample CSV", data=open(sample_file, "rb"), file_name=sample_file, mime="csv")
         # Upload CSV file
         uploaded_file = st.file_uploader("Upload CSV with Customer Data", type=["csv"])
 
@@ -284,8 +302,9 @@ def show_predict_page():
 
 
 
-
+    st.markdown("""  
+                -------------------------------------------------  """)
 
     # Get started button
-    if st.button("FAQs"):
-        st.session_state.current_page = "Explore"
+    st.write("## FAQs")
+    explore_page()

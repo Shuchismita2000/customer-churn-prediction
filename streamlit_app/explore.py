@@ -1,5 +1,7 @@
 import streamlit as st
 import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
 import pandas as pd
 
 
@@ -7,10 +9,7 @@ import pandas as pd
 df = pd.read_excel(r'D:\Portfolio Github\customer-churn-prediction\Telco_customer_churn.xlsx')
 
 def explore_page():
-    st.title("Explore Customer Churn Past Data")
-
-    # Accordion-style layout for all scenarios
-    st.subheader("FAQs")
+    st.write("### Explore Customer Churn Data")
 
     scenarios = [
         {"title": "What is the overall distribution of churn?",
@@ -45,7 +44,18 @@ def explore_page():
          "question": "#3 Is there a relationship between the length of tenure with the company and churn?",
           "answer":  "The plot below shows how tenure is distributed among churned and non-churned customers. We can observe if longer-tenure customers are less likely to churn.",
           "insights": """
-            """},
+        **Insights from Tenure Distribution by Churn Status**
+
+- **Early Churn:** Customers with a tenure of less than 10 months have a significantly higher churn rate than those with longer tenures. This suggests that a significant portion of customer churn occurs within the first few months of service.
+  
+- **Increased Retention with Tenure:** As tenure increases, the churn rate generally decreases. This indicates that customers who stay with the company for longer periods are less likely to churn.
+  
+- **Peaks in Churn:** There appear to be peaks in churn around the 20-month and 40-month marks. These could be attributed to factors such as contract expirations or changes in pricing or service offerings.
+  
+- **Tailing Off of Churn:** Beyond 60 months, the churn rate for both churned and retained customers begins to tail off. This suggests that customers who have been with the company for over five years are less likely to churn, regardless of their ultimate decision.
+
+**Overall:** The data indicates that early retention efforts are crucial to prevent churn. Focusing on customer satisfaction and addressing potential issues within the first few months of service can significantly improve overall retention rates. Additionally, identifying and addressing the reasons for churn peaks around specific tenure milestones can help to further reduce churn.
+"""},
         {"title": "What is the impact of monthly charges on churn?",
          "question": "#4 Do customers with higher monthly charges tend to churn more?",
          "answer":  " The plot below will help us see if there is a significant difference in monthly charges between customers who churn and those who don't.",
@@ -115,8 +125,9 @@ def explore_page():
                 elif scenario['question'].startswith("#2"):
                     plot_scenario_2()
                     st.markdown(scenario["insights"])
-                #elif scenario['question'].startswith("#3"):
-                    #plot_scenario_3(df)
+                elif scenario['question'].startswith("#3"):
+                    plot_scenario_3()
+                    st.markdown(scenario["insights"])
                 elif scenario['question'].startswith("#4"):
                     plot_scenario_4()
                     st.markdown(scenario["insights"])
@@ -172,25 +183,15 @@ def plot_scenario_2():
 
     st.plotly_chart(fig3)
 
-#def plot_scenario_3():
-    # Check if the required columns are present and if there are any null values
-    #if 'Tenure Months' in df.columns and 'Churn Label' in df.columns:
-    #    df_filtered = df.dropna(subset=['Tenure Months', 'Churn Label'])
+def plot_scenario_3():
+    plt.figure(figsize=(12, 6))
+    sns.histplot(data=df, x='Tenure Months', hue='Churn Label', element='step', stat='density', common_norm=False, palette='viridis', kde=True)
+    plt.title('Tenure Distribution by Churn Status')
+    plt.xlabel('Tenure (Months)')
+    plt.ylabel('Density')
+    plt.legend(title='Churn', labels=['No', 'Yes'], loc='upper right')
 
-    #    # Tenure vs Churn using Plotly
-    #    fig4 = px.histogram(df_filtered, x='Tenure Months', color='Churn Label', 
-    #                        title='Tenure Distribution by Churn Status', 
-    #                        labels={'Tenure Months': 'Tenure (Months)', 'Churn Label': 'Churn'}, 
-    #                        marginal='kde', 
-    #                        color_discrete_sequence=['#636EFA', '#EF553B'], 
-    #                        histnorm='density')
-#
-    #    fig4.update_layout(xaxis_title='Tenure (Months)', yaxis_title='Density', 
-    #                       template='plotly_white')
-
-    #    st.plotly_chart(fig4)
-    #else:
-    #    st.error("The dataset does not contain the required columns: 'Tenure Months' and 'Churn Label'.")
+    st.pyplot(plt.gcf())
 
 def plot_scenario_4():
     # Check if the required columns are present and if there are any null values
