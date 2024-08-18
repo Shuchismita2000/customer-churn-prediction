@@ -8,8 +8,7 @@ def about():
     st.write("""
     **Data Scientist | AI Enthusiast | EdTech Innovator**  
     Chinsurah, West Bengal, India  
-    **Email:** [mallickshuchismita25@gmail.com](mailto:mallickshuchismita25@gmail.com)  
-    **Phone:** +91 6291905383  
+    **Email:** [mallickshuchismita25@gmail.com](mailto:mallickshuchismita25@gmail.com)   
     **LinkedIn:** [Link](https://www.linkedin.com/in/shuchismita-mallick/)             
     **Github:** [Link](https://github.com/Shuchismita2000)
     """)
