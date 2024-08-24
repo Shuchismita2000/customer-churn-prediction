@@ -10,7 +10,7 @@ from explore import explore_page
 
 # Load the trained model encoders, scalers, and label encoders
 
-pipeline_path = "https://github.com/Shuchismita2000/customer-churn-prediction/tree/23c4fa927228485998827034aca4d959869e2ee4/pipeline"
+pipeline_path = "pipeline"
 scaler = {
  'Tenure Months': load(f"{pipeline_path}\Tenure Months_scaler.joblib"),
  'Monthly Charges': load(f"{pipeline_path}\Monthly Charges_scaler.joblib"),
@@ -260,7 +260,7 @@ def show_predict_page():
         """)
         
         #Download the sample file 
-        sample_file = "https://github.com/Shuchismita2000/customer-churn-prediction/blob/23c4fa927228485998827034aca4d959869e2ee4/sample_customer_churn.csv"
+        sample_file = "sample_customer_churn.csv"
         
         st.download_button(label="Download Sample CSV", data=open(sample_file, "rb"), file_name=sample_file, mime="csv")
         # Upload CSV file

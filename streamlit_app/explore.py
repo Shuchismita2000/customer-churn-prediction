@@ -6,7 +6,7 @@ import pandas as pd
 
 
 # Sample DataFrame (Replace this with your actual DataFrame)
-df = pd.read_excel("https://github.com/Shuchismita2000/customer-churn-prediction/blob/23c4fa927228485998827034aca4d959869e2ee4/Telco_customer_churn.xlsx")
+df = pd.read_excel("Telco_customer_churn.xlsx")
 
 def explore_page():
     st.write("### Explore Customer Churn Data")
