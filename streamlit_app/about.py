@@ -6,7 +6,7 @@ def about():
     # Name and Contact Information
     st.header("Shuchismita Mallick")
     st.write("""
-    **Data Scientist | AI Enthusiast | EdTech Innovator**  
+    **Data Scientist | AI Enthusiast **  
     Chinsurah, West Bengal, India  
     **Email:** [mallickshuchismita25@gmail.com](mailto:mallickshuchismita25@gmail.com)   
     **LinkedIn:** [Link](https://www.linkedin.com/in/shuchismita-mallick/)             

@@ -63,7 +63,7 @@ def explore_page():
             **Insights from Monthly Charges Distribution by Churn Status**
             - **Higher Monthly Charges Associated with Churn:** Customers paying higher monthly charges are significantly more likely to churn. The median monthly charge for churned customers is substantially higher than that of retained customers.
             - **Wider Range of Charges Among Churners:** The distribution of monthly charges for churned customers is more spread out, indicating a greater variability in pricing for those who leave compared to those who stay.
-            - ** Potential Pricing Sensitivity:** The relationship between higher monthly charges and churn suggests that pricing may be a factor influencing customer satisfaction and retention. It's possible that customers with higher bills feel less value for their money or are more susceptible to competitive offers.
+            - **Potential Pricing Sensitivity:** The relationship between higher monthly charges and churn suggests that pricing may be a factor influencing customer satisfaction and retention. It's possible that customers with higher bills feel less value for their money or are more susceptible to competitive offers.
          """},
         {"title": "How does contract type affect churn?",
          "question": "#5 Does the type of contract (month-to-month, one year, two years) influence the likelihood of churn?",
@@ -83,10 +83,12 @@ def explore_page():
             - **Fiber Optic Customers Less Likely to Churn:** Customers with fiber optic internet service have a significantly lower churn rate compared to those with DSL or no internet service.
             - **DSL Customers at Higher Risk:** DSL customers have a higher churn rate than both fiber optic customers and those without internet service.
             - **No Internet Service and Churn:** The churn rate for customers without internet service is higher than for DSL customers but lower than for fiber optic customers.
-            *Phone Service:*
-            - **No Phone Service Linked to Higher Churn:* Customers without phone service have a higher churn rate than those with phone service.
-            - **Phone Service Retention:* Having a phone service appears to be a factor in retaining customers, as those with phone service have a lower churn rate overall.
-            *Overall:* Fiber optic internet service seems to be a factor in customer retention, while the presence of phone service also contributes to lower churn rates. DSL customers and those without either internet or phone service are at a higher risk of churning.
+            
+                *Phone Service:*
+            - **No Phone Service Linked to Higher Churn:** Customers without phone service have a higher churn rate than those with phone service.
+            - **Phone Service Retention:** Having a phone service appears to be a factor in retaining customers, as those with phone service have a lower churn rate overall.
+            
+                *Overall:* Fiber optic internet service seems to be a factor in customer retention, while the presence of phone service also contributes to lower churn rates. DSL customers and those without either internet or phone service are at a higher risk of churning.
              """},
         {"title": "What is the relationship between payment methods and churn?",
          "question": "#7 Are certain payment methods associated with higher churn rates?",
@@ -104,10 +106,10 @@ def explore_page():
          "insights": """
             **Insights from Streaming Services and Online Security by Churn Status**
                 *Streaming Services:*
-            - ** Streaming TV and Movies: Customers who subscribe to either streaming TV or movies have significantly lower churn rates compared to those without either service. This suggests that these services are effective in retaining customers.
-            - ** No Internet Service and Churn: As expected, customers without internet service (and therefore no access to streaming services) have the highest churn rate.
+            - **Streaming TV and Movies:** Customers who subscribe to either streaming TV or movies have significantly lower churn rates compared to those without either service. This suggests that these services are effective in retaining customers.
+            - **No Internet Service and Churn:** As expected, customers without internet service (and therefore no access to streaming services) have the highest churn rate.
                 *Online Security:*
-            - ** Online Security and Churn: There is no significant difference in churn rates between customers who subscribe to online security and those who do not. This indicates that online security services do not appear to be a major factor influencing customer retention.
+            - **Online Security and Churn:** There is no significant difference in churn rates between customers who subscribe to online security and those who do not. This indicates that online security services do not appear to be a major factor influencing customer retention.
                 *Overall:* Streaming TV and movies are strongly associated with lower churn rates, suggesting that these services play a crucial role in customer satisfaction and loyalty. Online security, however, does not seem to have a significant impact on customer retention.
                 """},
     ]
