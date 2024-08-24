@@ -6,8 +6,8 @@ def about():
     # Name and Contact Information
     st.header("Shuchismita Mallick")
     st.write("""
-    **Data Scientist | AI Enthusiast **  
-    Chinsurah, West Bengal, India  
+    **Data Scientist | AI Enthusiast**  
+    West Bengal, India  
     **Email:** [mallickshuchismita25@gmail.com](mailto:mallickshuchismita25@gmail.com)   
     **LinkedIn:** [Link](https://www.linkedin.com/in/shuchismita-mallick/)             
     **Github:** [Link](https://github.com/Shuchismita2000)
@@ -62,16 +62,16 @@ def about():
     st.header("Key Projects")
     st.write("""
     **Market Mix Modeling**  
-    Developed a POC project experience optimizing budget allocation in different media channels for upcoming campaigns to improve ROI.
+        Developed a POC project experience optimizing budget allocation in different media channels for upcoming campaigns to improve ROI.
     
     **MLOps on Databricks**  
-    Developed a small POC project experience of Insurance underwriting, utilizing Databricks features - MLflow, feature store, model registry, and unity catalog.
+        Developed a small POC project experience of Insurance underwriting, utilizing Databricks features - MLflow, feature store, model registry, and unity catalog.
     
     **Traffic Sign Identification**  
-    Designed and trained deep learning models for accurately identifying traffic signs from images, improving the performance of automated driving systems.
+        Designed and trained deep learning models for accurately identifying traffic signs from images, improving the performance of automated driving systems.
     
     **Uplift Model**  
-    Created models to predict the incremental impact of treatment on different population segments, optimizing marketing strategies.
+        Created models to predict the incremental impact of treatment on different population segments, optimizing marketing strategies.
     
     """)
 
