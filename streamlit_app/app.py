@@ -18,5 +18,5 @@ if page == "Home":
     show_predict_page()
 elif page == "Guideline":
     show_guideline_page()
-elif page == "About":
+elif page == "About Me":
     about()
