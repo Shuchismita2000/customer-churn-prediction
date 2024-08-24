@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 def data_collection_page():
     st.title("Git & VS Code Setup")
@@ -16,7 +17,8 @@ def data_collection_page():
     ```
      """)
     
-    st.image("../Guideline/images/image1.png", 
+    image_path = os.path.join("Guideline", "images", "image1.png")
+    st.image(image_path, 
              caption="Creating a Project Folder in Terminal", use_column_width=True)
     
     st.write("""
@@ -25,8 +27,8 @@ def data_collection_page():
     git init
     ```
     """)
-
-    st.image("../Guideline/images/image2.png", 
+    image_path = os.path.join("Guideline", "images", "image2.png")
+    st.image(image_path, 
              caption="Initialize a Git Repository", use_column_width=True)
 
     st.header("Step 2: Set Up a Virtual Environment")
@@ -36,8 +38,8 @@ def data_collection_page():
     python -m venv venv
     ```
     """)
-    
-    st.image("../Guideline/images/image1.png", 
+    image_path = os.path.join("Guideline", "images", "image3.png")
+    st.image(image_path, 
              caption="Create a Virtual Environment", use_column_width=True)
              
     st.write("""         
@@ -53,7 +55,8 @@ def data_collection_page():
     source venv/bin/activate
     ```
     """)
-    st.image("../Guideline/images/image4.png", 
+    image_path = os.path.join("Guideline", "images", "image4.png")
+    st.image(image_path, 
              caption="Activate the Virtual Environment", use_column_width=True)
 
     st.write(""" 
@@ -62,9 +65,11 @@ def data_collection_page():
     pip install pandas numpy matplotlib seaborn scikit-learn
     ```
     """)
-    st.image("../Guideline/images/image5.png", 
+    image_path = os.path.join("Guideline", "images", "image5.png")
+    st.image(image_path, 
              caption="Install Required Packages", use_column_width=True)
-    st.image("Guideline/images/image6.png", 
+    image_path = os.path.join("Guideline", "images", "image6.png")
+    st.image(image_path, 
              caption="Install Required Packages", use_column_width=True)
     
     st.write(""" 
@@ -73,7 +78,8 @@ def data_collection_page():
     pip freeze > requirements.txt
     ```
     """)
-    st.image("../Guideline/images/image7.png", 
+    image_path = os.path.join("Guideline", "images", "image7.png")
+    st.image(image_path, 
              caption="Freeze Dependencies", use_column_width=True)
     
     st.header("Step 3: Set Up Git Ignore")
@@ -83,7 +89,8 @@ def data_collection_page():
     touch .gitignore
     ```
     """)
-    st.image("../Guideline/images/image8.png", 
+    image_path = os.path.join("Guideline", "images", "image8.png")
+    st.image(image_path, 
              caption="Create a `.gitignore` File", use_column_width=True)
 
     st.write("""
@@ -105,7 +112,8 @@ def data_collection_page():
     ```
     """)
 
-    st.image("../Guideline/images/image9.png", 
+    image_path = os.path.join("Guideline", "images", "image9.png")
+    st.image(image_path, 
              caption="Add Entries to `.gitignore`", use_column_width=True)
 
 
@@ -113,7 +121,8 @@ def data_collection_page():
     st.write("""
     **Create a New Repository on GitHub:** Go to GitHub and create a new repository. Do not initialize it with a README, .gitignore, or license as we have already set up our project locally.
     """)
-    st.image("../Guideline/images/image10.png", 
+    image_path = os.path.join("Guideline", "images", "image10.png")
+    st.image(image_path, 
              caption="Create a New Repository on GitHub", use_column_width=True)
 
     st.write("""
@@ -122,13 +131,14 @@ def data_collection_page():
     git remote add origin https://github.com/YOUR_GITHUB_USERNAME/REPOSITORY_NAME.git
     ```
     """)
-    st.image("../Guideline/images/image11.png", 
+    image_path = os.path.join("Guideline", "images", "image11.png")
+    st.image(image_path, 
              caption="Create a New Repository on GitHub", use_column_width=True)
-    
-    st.image("../Guideline/images/image12.png", 
+    image_path = os.path.join("Guideline", "images", "image12.png")
+    st.image(image_path, 
              caption="Create a New Repository on GitHub", use_column_width=True)
-    
-    st.image("../Guideline/images/image13.png", 
+    image_path = os.path.join("Guideline", "images", "image13.png")
+    st.image(image_path, 
              caption="Create a New Repository on GitHub", use_column_width=True)
     
 
