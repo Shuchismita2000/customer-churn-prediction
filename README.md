@@ -49,7 +49,7 @@ pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 ```
 4. File Structure
-5. 
+```
 customer-churn-prediction/
 │
 ├── streamlit_app/
@@ -72,6 +72,9 @@ customer-churn-prediction/
 │
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # Project documentation
+
+```
+
 Contributing
 Contributions are welcome! Please create an issue or a pull request for any improvements or suggestions.
 
