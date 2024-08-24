@@ -8,7 +8,6 @@ This project aims to predict customer churn using machine learning models. The w
 - [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
 - [License](#license)
