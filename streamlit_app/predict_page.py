@@ -12,19 +12,19 @@ from explore import explore_page
 
 pipeline_path = "pipeline"
 scaler = {
- 'Tenure Months': load(f"{pipeline_path}\Tenure Months_scaler.joblib"),
- 'Monthly Charges': load(f"{pipeline_path}\Monthly Charges_scaler.joblib"),
- 'CLTV': load(f"{pipeline_path}\CLTV_scaler.joblib"),
+ 'Tenure Months': load(f"{pipeline_path}/Tenure Months_scaler.joblib"),
+ 'Monthly Charges': load(f"{pipeline_path}/Monthly Charges_scaler.joblib"),
+ 'CLTV': load(f"{pipeline_path}/CLTV_scaler.joblib"),
 
 }
 label_encoders = {
-    'City': load(f"{pipeline_path}\City_label_encoder.joblib"),
-    'Zip Code': load(f"{pipeline_path}\Zip Code_label_encoder.joblib"),
-    'Internet Service': load(f"{pipeline_path}\Internet Service_label_encoder.joblib"),
-    'Online Security': load(f"{pipeline_path}\Online Security_label_encoder.joblib"),
-    'Tech Support': load(f"{pipeline_path}\Tech Support_label_encoder.joblib"),
-    'Contract': load(f"{pipeline_path}\Contract_label_encoder.joblib"),
-    'Dependents': load(f"{pipeline_path}\Dependents_label_encoder.joblib"),
+    'City': load(f"{pipeline_path}/City_label_encoder.joblib"),
+    'Zip Code': load(f"{pipeline_path}/Zip Code_label_encoder.joblib"),
+    'Internet Service': load(f"{pipeline_path}/Internet Service_label_encoder.joblib"),
+    'Online Security': load(f"{pipeline_path}/Online Security_label_encoder.joblib"),
+    'Tech Support': load(f"{pipeline_path}/Tech Support_label_encoder.joblib"),
+    'Contract': load(f"{pipeline_path}/Contract_label_encoder.joblib"),
+    'Dependents': load(f"{pipeline_path}/Dependents_label_encoder.joblib"),
 }
 
 def preprocess_data_single_input(df):
